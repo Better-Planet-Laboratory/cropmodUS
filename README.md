@@ -4,7 +4,6 @@
 
 This repository allows you to estimate the impacts of weather (main growing season temperature, precipitation, standardized precipitation index and days >30C) on 20+ crops within the USA over the time series 1983-2016. Statistical crop yield models are fit using state level observations and the yearly impact of weather is predicted at the county level.We compare the predicted yields for a given crop and county for a given year and weather observation to the predicted yield under the mean climate observed in that county. Running the scripts will result in a database that contains the annual yield anomaly due to weather for each crop and county. Uncertainty for the  estimates are given via residual bootstrapping.
 
-![Alt Text](https://github.com/Better-Planet-Laboratory/cropmodUS/blob/main/assets/demo.jpg)
 
 # Requirements
 
@@ -63,6 +62,12 @@ The key output file for this program is a file found at `Data/modout/end/county_
 - interpolated: logical, T/F flag to identify if predictions are made for years outside USDA records (e.g. hind casts for minor or specialty crops prior to national reporting)
 
 Note: these are predicted impacts for counties for crops where state level production was reported. Intersecting with additional data, e.g. the USDA cropland data layer would allow you to identify counties that actually grew the crop within the state, if such additional filtering is required for your application.
+
+
+# Demo
+
+![Alt Text](https://github.com/Better-Planet-Laboratory/cropmodUS/blob/main/assets/demo.jpg)
+
 
 # Getting help
 
