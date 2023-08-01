@@ -1,0 +1,8 @@
+install.packages("remotes")
+remotes::install_github("rstudio/renv")
+  renv::init()
+ # renv::activate()
+renv::restore()
+renv::update()
+# renv::snapshot()
+# renv::deactivate(clean = TRUE)
