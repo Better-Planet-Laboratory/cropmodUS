@@ -46,8 +46,6 @@ grab_seasonal_weather <- function(data, desired_years, desired_months, fx, bound
 
 
   # Compute weighted average of pixels in state
-  ####something wrong with this fun!£#####
-  ####s####s####s####s####s####s####s####s####s
 
 merged_df %>%
     mutate(Cropland2000_5m = replace_na(Cropland2000_5m, 0)) %>%
